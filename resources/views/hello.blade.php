@@ -1,1 +1,1 @@
-<h1>Hello word</h1>
+<h1>Push by admin</h1>
