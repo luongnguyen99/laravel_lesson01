@@ -11,7 +11,13 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::view('/', 'welcome');
+Route::get('hello', 'HelloController@index');
+
+// Route::get('hello','HelloController@index');
+// Route::get('hello',function(){
+//     return
+// });
+Route::get('user/{name}',function($name = null){
+    return 'Đây là '. $name;
 });
-Route::get('hello','HelloController@index');
