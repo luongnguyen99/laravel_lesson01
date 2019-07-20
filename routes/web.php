@@ -11,8 +11,8 @@
 |
 */
 
-Route::view('/', 'welcome');
-Route::get('hello', 'HelloController@index');
+// Route::view('/', 'welcome');
+Route::get('/', 'HelloController@index');
 
 // Route::get('hello','HelloController@index');
 // Route::get('hello',function(){
@@ -21,3 +21,10 @@ Route::get('hello', 'HelloController@index');
 Route::get('user/{name}',function($name = null){
     return 'Đây là '. $name;
 });
+
+Route::get('input','input@index')->name('sum-view');
+Route::get('input/add','input@add');
+Route::post('input/saveadd','input@saveadd')->name('sum');
+
+Route::get('students','StudentController@index')->name('students');
+Route::get('classes','ClassController@index')->name('classes');
