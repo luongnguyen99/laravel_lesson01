@@ -28,3 +28,5 @@ Route::post('input/saveadd','input@saveadd')->name('sum');
 
 Route::get('students','StudentController@index')->name('students');
 Route::get('classes','ClassController@index')->name('classes');
+
+Route::get('admin','StudentController@get_detail_id_2');
