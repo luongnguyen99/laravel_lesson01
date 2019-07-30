@@ -1,3 +1,4 @@
+
 @yield('title')
 <table class="table">
     <thead>
