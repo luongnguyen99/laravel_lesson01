@@ -16,4 +16,7 @@ class Student extends Model
     ];
 
     
+    public function classRoom(){
+        return $this->belongsTo('App\Models\ClassRoom');
+    }
 }

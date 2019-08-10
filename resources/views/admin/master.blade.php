@@ -213,7 +213,7 @@ desired effect
                   <a href="#" class="btn btn-default btn-flat">Profile</a>
                 </div>
                 <div class="pull-right">
-                  <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                <a href="{{route('admins.logout')}}" class="btn btn-default btn-flat">Sign out</a>
                 </div>
               </li>
             </ul>
@@ -262,7 +262,7 @@ desired effect
         <!-- Optionally, you can add icons to the links -->
         
         <li class="treeview">
-        <a href="{{route('classes')}}"><i class="fa fa-link"></i> <span>Classes</span>
+        <a href="{{route('classes.list')}}"><i class="fa fa-link"></i> <span>Classes</span>
             <span class="pull-right-container">
                 <i class="fa fa-angle-left pull-right"></i>
               </span>
